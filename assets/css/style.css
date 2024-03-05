@@ -2,24 +2,59 @@
 
 header::before{
     content: " ";
-    background-image: url(../images/header.png);
-    height: 100vh;
+    background-image: url(../images/header_filtro.png);
+    height: 52vh;
     width: 100vw;
     display: block;
     position: absolute;
     z-index: -10;
+    background-size: cover;
 }
 
 h1{
-    font-family:"Poiret One",sans-serif;
+    font-family:"Nanum Myeongjo",sans-serif;
     color: #CC8614;
     font-size: 40px;
     font-weight: 700;
+    text-align: center;
+    line-height: 6
 }
 
 h2{
-    font-family:"Nanum Myeongjo",sans-serif;
-    color: #730811;
+    font-family:"Poiret One",sans-serif;
+    color: #c52230;
     font-size: 32px;
     font-weight: 400;
+    text-align: center;
+    font-weight: bold; 
+    line-height: 3
+}
+
+
+body{
+    background-color: #f0f0f0bd;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    height: 100vh; 
+}
+
+ul {
+    text-align:center;
+}
+
+
+footer{
+    content: " ";
+    background-image: url(../images/header_filtro.png);
+    height: 50vh;
+    width: 100vw;
+    display: block;
+    position: absolute;
+    z-index: -10;
+    background-size: cover;
+    background-position: bottom;
 }
