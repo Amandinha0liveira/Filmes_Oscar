@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poiret+One&display=swap');
 
+
+:root{
+    --color-destaque: #CC8614;
+    --color-black:#1B1B1B;
+    --color-white: #ECECEC;
+    --font-title: "Nanum Myeongjo",sans-serif;
+    --front-media:"Poiret One",sans-serif;
+    --font-body: "Nixie One", sans-serif;
+}
+
+header{
+    height: 55vh;
+}
+
 header::before{
     content: " ";
     background-image: url(../images/header_filtro.png);
@@ -17,7 +31,7 @@ h1{
     font-size: 40px;
     font-weight: 700;
     text-align: center;
-    line-height: 6
+    line-height: 7.5
 }
 
 h2{
@@ -30,10 +44,10 @@ h2{
     line-height: 3
 }
 
-
 body{
     background-color: #f0f0f0bd;
     text-align: center;
+    font-family: "Nixie One",sans-serif;
 }
 
 .container {
@@ -46,7 +60,6 @@ ul {
     text-align:center;
 }
 
-
 footer{
     content: " ";
     background-image: url(../images/header_filtro.png);
@@ -57,4 +70,29 @@ footer{
     z-index: -10;
     background-size: cover;
     background-position: bottom;
+}
+
+#secao-apresentacao{
+    display: flex;
+    align-items: center;
+    padding: 4rem;
+    /*1rem = 16px*/
+}
+
+#secao-apresentacao img{
+    border-radius: 50%;
+}
+
+#texto-apresentacao{
+    color: var(--color-black);
+}
+
+#texto-apresentacao h2{
+    font-size: 2.5rem;
+    font-family: var(--front-media);
+}
+
+#texto-apresencao p{
+    font-size: 1.5rem;
+    font-family: var(--font-body);
 }
