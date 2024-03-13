@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Poiret+One&display=swap');
 
+*{
+    list-style: none;
+}
 
 :root{
     --color-destaque: #CC8614;
@@ -95,4 +98,51 @@ footer{
 #texto-apresencao p{
     font-size: 1.5rem;
     font-family: var(--font-body);
+}
+
+#secao-projetos{
+    background-color: #f0e8bf;
+    height: 100vh;
+}
+
+#secao-projetos ul{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr; --> maneira "analogica" = sem função*/
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
+}
+
+.card{
+    max-width: 300px;
+    height: 420px;
+    position: relative;
+    cursor: pointer;
+}
+
+.image-wrapper{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.image-wrapper img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-text{
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    transition: opacity .8s, top .5s;
+}
+
+.card:hover .card-text{
+    opacity: 1;
+    top: 15%;
+}
+
+.card:hover .image-wrapper{
+    opacity: .3;
 }
