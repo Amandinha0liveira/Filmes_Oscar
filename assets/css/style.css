@@ -44,11 +44,14 @@ h2{
     font-weight: 400;
     text-align: center;
     font-weight: bold; 
-    line-height: 3
+}
+
+#subtitulo{
+    line-height: 6
 }
 
 body{
-    background-color: #f0f0f0bd;
+    background-color: beige;
     text-align: center;
     font-family: "Nixie One",sans-serif;
 }
@@ -108,7 +111,7 @@ footer{
 #secao-projetos ul{
     display: grid;
     /*grid-template-columns: 1fr 1fr 1fr; --> maneira "analogica" = sem função*/
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     place-items: center;
 }
 
