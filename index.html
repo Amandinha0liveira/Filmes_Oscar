@@ -215,7 +215,7 @@
     </section>
 
     <section id = 'secao-orçamento'>
-        <h2>Calcule quantas horas você assistiu no Oscar</h2>
+        <h2>Calcule quantas horas você passou assistindo esses filmes!</h2>
         <form action="">
             <div class="campo linha">
                 <label for="nome">Nome do filme</label>
@@ -223,36 +223,38 @@
             </div>
 
             <div class="campo">
-                <label for="paginas">Duração do filme, em minutos</label>
+                <label for="paginas">Quantas vezes você assistiu este filme?</label>
                 <input type="number" id="paginas">
             </div>
             
             <div class="campo">
                 <label for="tipo">Por onde você assistiu?</label>
                     <select id="tipo">
-                        <option value="1">celular</option>
-                        <option value="2">cinema</option>
-                        <option value="3">televisão</option>
+                        <option value="1">cinema</option>
+                        <option value="2">casa</option>
                     </select>
             </div>
 
             <div class="campo linha">
-                <label for="">Valeu a pena ver o filme?</label>
+                <label for="">Assistiu estes filme antes da premiação do Oscar?</label>
                 <div>
                     <input type="radio" name="prototipo" id="prototipo_sim">
-                    <label for="prototipo_sim">sim, horas bem gastas</label>
+                    <label for="prototipo_sim">sim</label>
                     <input type="radio" name="prototipo" id="prototipo_nao">
-                    <label for="prototipo_nao">não, horas bem disperdiçadas</label>
+                    <label for="prototipo_nao">não</label>
                 </div>
             </div>
             
-            <label for="prazo">De sua nota</label>
+            <label for="prazo">De uma nota para o filme arrastando essa barra ao lado</label>
             <input type="range" min="1" max="10" id="prazo">
 
             <input type="checkbox" id="js">
-            <label for="js">Recomendaria esse filme? </label>
+            <label for="js">Recomendaria esse para seus amigos e familiares? </label>
+
+            
 
             <button type="button" class="meu-botao">Enviar</button>
+            <button type="button" class="meu-botao">Adicionar outo filme</button>
 
         </form>
 
