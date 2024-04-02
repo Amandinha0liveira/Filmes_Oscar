@@ -191,3 +191,14 @@ input[type=range]
     border-radius: 5px;
     cursor: pointer;
 }
+
+table {
+    width: 25%;
+    margin: 0 auto; /* Centraliza a tabela horizontalmente */
+    
+}
+
+th, td {
+    text-align: center; /* Centraliza o conteúdo das células */
+   
+}

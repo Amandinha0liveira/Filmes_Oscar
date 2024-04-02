@@ -219,22 +219,31 @@
         <h2>Calcule quantas horas você passou assistindo esses filmes!</h2>
         <form action="">
             <div class="campo linha">
-                <label for="nome">Nome do filme</label>
-                <input type="text" id="nome">
+                <label for="tipo">Nome do filme:</label>
+                    <select id="tipo">
+                        <option value="0"></option>
+                        <option value="1">Pobres Criaturas</option>
+                        <option value="2">Oppenheimer</option>
+                        <option value="3">Barbie</option>
+                        <option value="4">Anatomia de uma Queda</option>
+                        <option value="5">Maestro</option>
+                        <option value="6">Vidas Passadas</option>
+                        <option value="7">Zona de Interesse</option>
+                        <option value="8">Os Rejeitados</option>
+                        <option value="9">Assassinos da Lua das Flores</option>
+                        <option value="10">American Fiction</option>
+                    </select>
+
             </div>
 
             <div class="campo">
                 <label for="paginas">Quantas vezes você assistiu este filme?</label>
                 <input type="number" id="paginas">
-                <output id="valor">3 horas</output>
             </div>
             
             <div class="campo">
-                <label for="tipo">Por onde você assistiu?</label>
-                    <select id="tipo">
-                        <option value="1">cinema</option>
-                        <option value="2">streaming</option>
-                    </select>
+                <label for="nome"> Onde você assistiu esses filmes, cinema ou Streaming?</label>
+                <input type="text" id="nome">
             </div>
 
             <div class="campo linha">
@@ -255,13 +264,66 @@
 
             
 
-            <button type="button" class="meu-botao">Enviar</button>
-            <button type="button" class="meu-botao">Adicionar outo filme</button>
-
+            <button type="button" id="btnEnviar" class="meu-botao">Enviar</button>
+            <button type="button" class="meu-botao adicionar-filme">Adicionar outro filme</button>
         </form>
+        
+        <p></p>
+
+        <div id="resultado"></div>
+        
+        <p></p>
+
+        <table border="1">
+            <tr>
+                <td>FILME</td>
+                <td>MINUTOS</td>
+            </tr>
+            <tr>
+                <td>Pobres Criaturas</td>
+                <td>141</td>
+            </tr>
+            <tr>
+                <td>Oppenheimer</td>
+                <td>180</td>
+            </tr>
+            <tr>
+                <td>Barbie</td>
+                <td>111</td>
+            </tr>
+            <tr>
+                <td>Anatomia de uma Queda</td>
+                <td>152</td>
+            </tr>
+            <tr>
+                <td>Maestro</td>
+                <td>129</td>
+            </tr>
+            <tr>
+                <td>Vidas Passadas</td>
+                <td>106</td>
+            </tr>
+            <tr>
+                <td>Zona de Interesse</td>
+                <td>106</td>
+            </tr>
+            <tr>
+                <td>Os Rejeitados</td>
+                <td>133</td>
+            </tr>
+            <tr>
+                <td>Assassinos da Lua das Flores</td>
+                <td>206</td>
+            </tr>
+            <tr>
+                <td>American Fiction</td>
+                <td>117</td>
+            </tr>
+        
+        </table>
 
     </section>
-
+ 
 <footer>
     <link rel="stylesheet" href="./assets/css/style.css">
 </footer>
